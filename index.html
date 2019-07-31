@@ -9,8 +9,8 @@
 body {
   -webkit-text-size-adjust: 100%;
   margin: 2em auto;
-  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, Tahoma, sans-serif;
-  font-size: 0.9em;
+  font-family: sans-serif;
+  font-size: 1em;
 }
 h1 {
   font-size: 20pt;
@@ -18,7 +18,7 @@ h1 {
   color: #404040;
 }
 h2 {
-  font-size: 15pt;
+  font-size: 18pt;
   line-height: 80%;
   color: #404040;
 }
@@ -34,7 +34,7 @@ h4 {
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
-  font-size: 8pt;
+  font-size: 10pt;
   font-weight: 100;
   color: #404040;
 }
@@ -44,7 +44,7 @@ p {
 }
 a, a:link, a:visited {
   background-color:transparent;
-  text-decoration:none;
+  text-decoration: underline;
   color: #0046a5;
 }
 .avatar {
@@ -57,13 +57,24 @@ div.blockt {
   border: 1px solid #ddd;
 }
 div.block {
-  margin-left: 300px;
+  margin-left: 330px;
   padding: 20px 20px 20px 20px;
+}
+div.pub-block {
+  width: 950px;
+}
+div.line {
+  box-sizing: border-box;
+  min-height: 1px;
+  border-bottom: 2px dotted #ddd;
+}
+hr.style3 {
+  border-top: 1px dashed #8c8b8b;
 }
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 250px; /* Set the width of the sidebar */
+  width: 270px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   background-color:#F6F6F6;
   z-index: 1; /* Stay on top */
@@ -137,107 +148,167 @@ div.block {
 
 <div class="block">
 <h2>Publications</h2>
+
+  <div class="pub-block">
   <table>
-    <tr>
-      <td valign="middle">
-        <img src="images/cvpr19_dkim.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>Dense Relational Captioning: Triple-Stream Networks for Relationship-Based Captioning,</b><br>
-          D. Kim, <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br>
-          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), June 2019.</i><br>
-          <a href="https://arxiv.org/abs/1903.05942" target="_blank">Paper</a> | 
-          <a href="https://sites.google.com/view/relcap" target="_blank">Project page</a>
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td valign="middle">
-        <img src="images/wacv18.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>Contextually Customized Video Summaries via Natural Language,</b><br>
-          <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br>
-          <i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), March 2018.</i><br>
-          <a href="https://arxiv.org/abs/1702.01528" target="_blank">Paper</a>
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td valign="middle">
-        <img src="images/wacv18_dkim.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>Disjoint Multi-task Learning between Heterogeneous Human-centric Tasks,</b><br>
-          D. Kim, <b>Jinsoo Choi</b>, T. Oh, Y. Yoon, I.S. Kweon,<br>
-          <i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), March 2018.</i><br>
-          <a href="https://arxiv.org/abs/1802.04962" target="_blank">Paper</a>
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td valign="middle">
-        <img src="images/eccvw16.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>A Real-time Vehicular Vision System to Seamlessly See-through Cars,</b><br>
-          F. Rameau, H. Ha, K. Joo, <b>Jinsoo Choi</b>, I.S. Kweon,<br>
-          <i>European Conference on Computer Vision Workshops (<b>ECCVW - ACVR</b>), October 2016.</i><br></p>
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td valign="middle">
-        <img src="images/ismar16.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>A Real-time Augmented Reality System to See-Through Cars,</b><br>
-          F. Rameau, H. Ha, K. Joo, <b>Jinsoo Choi</b>, K. Park, I.S. Kweon,<br>
-          <i>IEEE International Symposium on Mixed and Augmented Reality (<b>ISMAR/TVCG</b>), September 2016.</i><br></p>
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td valign="middle">
-        <img src="images/cvpr16.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>Video-Story Composition via Plot Analysis,</b><br>
-          <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br>
-          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), June 2016.</i><br>
-          <span style="color: #A52A2A">Spotlight Paper (9.7% accept rate)</span><br>
-          <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Choi_Video-Story_Composition_via_CVPR_2016_paper.pdf" target="_blank">Paper</a> | 
-          <a href="https://github.com/jinsc37/Video-Story-CVPR16" target="_blank">Project page</a> | 
-          <a href="https://www.youtube.com/watch?v=3RlPPTTeUVI" target="_blank">Presentation in Las Vegas</a>
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td valign="middle">
-        <img src="images/icip14.PNG" style="float:left;padding-right:12px" width="165" />
-      </td>
-      <td valign="middle">
-        <p>
-          <b>GMM-based Saliency Aggregation for Calibration-free Gaze Estimation,</b><br>
-          <b>Jinsoo Choi</b>, B. Ahn, J. Park, and I.S. Kweon,<br>
-          <i>IEEE Conference on Image Processing (<b>ICIP</b>), October 2014.</i><br>
-          <a href="https://ieeexplore.ieee.org/document/7025218" target="_blank">Paper</a>
-        </p>
-      </td>
-    </tr>
+    <td valign="middle">
+      <img src="images/tog19.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>Unsupervised Video Stabilization (Minor revision),</b><br>
+        <b>Jinsoo Choi</b>, and I.S. Kweon,<br><br>
+        <i>ACM Transactions on Graphics (<b>TOG/SIGGRAPH Asia</b>), Nov. 2019.</i><br>
+      </p>
+    </td>
   </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/cvpr19_dkim.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>Dense Relational Captioning: Triple-Stream Networks for Relationship-Based Captioning,</b><br>
+        D. Kim, <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br><br>
+        <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), Jun. 2019.</i><br>
+        <a href="https://arxiv.org/abs/1903.05942" target="_blank">[Paper]</a>
+        <a href="https://sites.google.com/view/relcap" target="_blank">[Project page]</a>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/cvprw19_dkim.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>Leveraging Unpaired Data for Image Captioning upon Scarce Supervised Data,</b><br>
+        D. Kim, <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br><br>
+        <i>Language and Vision Workshop at <b>CVPR</b> 2019.</i><br>
+        <i>Visual Question Answering and Dialog Workshop at <b>CVPR</b> 2019.</i><br>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/wacv18.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>Contextually Customized Video Summaries via Natural Language,</b><br>
+        <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br><br>
+        <i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), Mar. 2018.</i><br>
+        <a href="https://arxiv.org/abs/1702.01528" target="_blank">[Paper]</a>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/wacv18_dkim.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>Disjoint Multi-task Learning between Heterogeneous Human-centric Tasks,</b><br>
+        D. Kim, <b>Jinsoo Choi</b>, T. Oh, Y. Yoon, I.S. Kweon,<br><br>
+        <i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), Mar. 2018.</i><br>
+        <a href="https://arxiv.org/abs/1802.04962" target="_blank">[Paper]</a>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/eccvw16.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>A Real-time Vehicular Vision System to Seamlessly See-through Cars,</b><br>
+        F. Rameau, H. Ha, K. Joo, <b>Jinsoo Choi</b>, I.S. Kweon,<br><br>
+        <i>European Conference on Computer Vision Workshops (<b>ECCVW - ACVR</b>), Oct. 2016.</i><br></p>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/ismar16.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>A Real-time Augmented Reality System to See-Through Cars,</b><br>
+        F. Rameau, H. Ha, K. Joo, <b>Jinsoo Choi</b>, K. Park, I.S. Kweon,<br><br>
+        <i>IEEE International Symposium on Mixed and Augmented Reality (<b>ISMAR/TVCG</b>), Sep. 2016.</i><br></p>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/cvpr16.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>Video-Story Composition via Plot Analysis,</b><br>
+        <b>Jinsoo Choi</b>, T. Oh, and I.S. Kweon,<br><br>
+        <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), Jun. 2016.</i><br>
+        <span style="color: #A52A2A">Spotlight Paper (9.7% accept rate)</span><br>
+        <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Choi_Video-Story_Composition_via_CVPR_2016_paper.pdf" target="_blank">[Paper]</a>
+        <a href="https://github.com/jinsc37/Video-Story-CVPR16" target="_blank">[Project page]</a>
+        <a href="https://www.youtube.com/watch?v=3RlPPTTeUVI" target="_blank">[Presentation in Las Vegas]</a>
+      </p>
+    </td>
+  </table>
+  <div class="line"></div>
+  </div>
+
+
+  <div class="pub-block">
+  <table>
+    <td valign="middle">
+      <img src="images/icip14.PNG" style="float:left;padding-right:12px" width="165" />
+    </td>
+    <td valign="middle">
+      <p>
+        <b>GMM-based Saliency Aggregation for Calibration-free Gaze Estimation,</b><br>
+        <b>Jinsoo Choi</b>, B. Ahn, J. Park, and I.S. Kweon,<br><br>
+        <i>IEEE Conference on Image Processing (<b>ICIP</b>), Oct. 2014.</i><br>
+        <a href="https://ieeexplore.ieee.org/document/7025218" target="_blank">[Paper]</a>
+      </p>
+    </td>
+  </table>
+  </div>
 
 <!--
   <p>&#8226 <b>Area-Based Decision Driven Best-Buddies Similarity Method for Robust Template Matching,</b><br>
