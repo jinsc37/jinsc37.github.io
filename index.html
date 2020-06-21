@@ -82,12 +82,12 @@ div.line {
 }
 
 .centered {
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  width: 330px; /* Set the width of the sidebar */
+  position: absolute;
+  margin: 0;
+  top: 250px;
   left: 50%;
-  margin-left: -185px;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding: 40px 20px 20px 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
 
