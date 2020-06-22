@@ -13,6 +13,9 @@ body {
   margin: 2em auto;
   font-family: sans-serif;
   font-size: 1em;
+  background: url(images/1280x720-colorful-blur.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%
 }
 h1 {
   font-size: 20pt;
@@ -83,8 +86,12 @@ div.line {
 
 .centered {
   position: absolute;
-  margin: 0;
-  top: 250px;
+  background-color:#FFFFFF;
+  opacity: 0.85;
+  overflow: hidden; /* Hide contents overflowing from div*/
+  border-radius: 25px;
+  margin-top: 50px;
+  top: 30%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
@@ -98,6 +105,7 @@ div.line {
 
 
 <body>
+
 <div class="centered">
 
   <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jinsoo-leo-choi"><a class="LI-simple-link" href='https://www.linkedin.com/in/jinsoo-leo-choi?trk=profile-badge'>Jinsoo Leo Choi</a></div>
@@ -110,9 +118,7 @@ div.line {
     <i class="fa fa-github"></i>
       <a href="https://github.com/jinsc37" target="_blank">GitHub</a><br>
     <i class="fa fa-file-pdf-o"></i>
-      <a href="https://drive.google.com/file/d/1Ty2ynehBxW1h0WHsAJzFik7xvlf-qMLe/view?usp=sharing" target="_blank">Resume</a><br>
-    <br>
-
+      <a href="https://drive.google.com/file/d/1Ty2ynehBxW1h0WHsAJzFik7xvlf-qMLe/view?usp=sharing" target="_blank">Resume</a>
   <!--Arrange a meeting with me <a href="https://calendly.com/jinsc37" target="_blank">here</a>-->
   </h4>
 </div>
