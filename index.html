@@ -16,6 +16,7 @@ body {
   background: url(images/1280x720-colorful-blur.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
+  overflow: hidden;
 }
 h1 {
   font-size: 20pt;
@@ -86,15 +87,18 @@ div.line {
 
 .centered {
   position: absolute;
-  background-color:#FFFFFF;
-  opacity: 0.85;
-  overflow: hidden; /* Hide contents overflowing from div*/
-  border-radius: 25px;
   margin-top: 50px;
   top: 30%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
+}
+
+.rounded {
+  background-color:#FFFFFF;
+  opacity: 0.85;
+  overflow: hidden; /* Hide contents overflowing from div*/
+  border-radius: 25px;
 }
 
 
@@ -108,20 +112,30 @@ div.line {
 
 <div class="centered">
 
-  <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jinsoo-leo-choi"><a class="LI-simple-link" href='https://www.linkedin.com/in/jinsoo-leo-choi?trk=profile-badge'>Jinsoo Leo Choi</a></div>
+  <div class="rounded">
+    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jinsoo-leo-choi"><a class="LI-simple-link" href='https://www.linkedin.com/in/jinsoo-leo-choi?trk=profile-badge'>Jinsoo Leo Choi</a></div>
+  </div>
 
-  <h4>
-    <i class="fa fa-envelope-square"></i>
-    jinsc37 [at] gmail.com<br>
-    <i class="ai ai-google-scholar-square"></i>
-      <a href="https://scholar.google.co.kr/citations?user=1bfPuvgAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-    <i class="fa fa-github"></i>
-      <a href="https://github.com/jinsc37" target="_blank">GitHub</a><br>
-    <i class="fa fa-file-pdf-o"></i>
-      <a href="https://drive.google.com/file/d/1Ty2ynehBxW1h0WHsAJzFik7xvlf-qMLe/view?usp=sharing" target="_blank">Resume</a>
-  <!--Arrange a meeting with me <a href="https://calendly.com/jinsc37" target="_blank">here</a>-->
-  </h4>
+  <br>
+
+  <div class="rounded">
+    <h4>
+      <i class="fa fa-envelope-square"></i>
+      jinsc37 [at] gmail.com<br>
+      <i class="ai ai-google-scholar-square"></i>
+        <a href="https://scholar.google.co.kr/citations?user=1bfPuvgAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
+      <i class="fa fa-github"></i>
+        <a href="https://github.com/jinsc37" target="_blank">GitHub</a><br>
+      <i class="fa fa-file-pdf-o"></i>
+        <a href="https://drive.google.com/file/d/1Ty2ynehBxW1h0WHsAJzFik7xvlf-qMLe/view?usp=sharing" target="_blank">Resume</a>
+    <!--Arrange a meeting with me <a href="https://calendly.com/jinsc37" target="_blank">here</a>-->
+    </h4>
+  </div>
+
+
 </div>
+
+
 
 
 
